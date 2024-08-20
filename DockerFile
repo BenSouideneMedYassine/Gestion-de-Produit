@@ -1,0 +1,4 @@
+FROM  openjdk:17
+EXPOSE 8686
+ADD target/myappliapplication.jar myappliapplication.jar
+ENTRYPOINT ["java","-jar","/myappliapplication.jar"] 
